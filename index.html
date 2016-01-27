@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
+      <a class="logo" href="#">
         <img src="http://placehold.it/150x100">
-      </div>
+      </a>
 
       <nav class="main-navigation">
         <ul>
@@ -30,21 +30,40 @@
         <a class="user-block-btn user-block-btn-cart" href="#">Пусто</a>
       </div>
 
-      <p class="availability-store">
+      <p class="main-header-about-store">
         С 10 до 20, ежедневно<br>
-        8 812 450-25-25
+        <span class="main-header-tel">8 812 450-25-25</span>
       </p>
     </header>
 
     <main>
       <section class="slider">
-        <img src="http://placehold.it/150x100">
-        <b>Крем-брюле и пломбир с малиновым джемом</b>
-        <a class="btn slider-btn" href="#">Давайте оба!</a>
-        <div class="selector">
-          <a class="selected" href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+        <input class="slider-radio" id="slide1" type="radio" name="slide">
+        <input class="slider-radio" id="slide2" type="radio" name="slide">
+        <input class="slider-radio" id="slide3" type="radio" name="slide">
+
+        <div class="slider-item">
+          <img src="http://placehold.it/150x100">
+          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+          <a class="btn slider-item-btn" href="#">Давайте оба!</a>
+        </div>
+
+        <div class="slider-item">
+          <img src="http://placehold.it/150x100">
+          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+          <a class="btn slider-item-btn" href="#">Давайте оба!</a>
+        </div>
+
+        <div class="slider-item">
+          <img src="http://placehold.it/150x100">
+          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+          <a class="btn slider-item-btn" href="#">Давайте оба!</a>
+        </div>
+
+        <div class="slider-labels">
+          <label class="slider-label-active" for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
         </div>
       </section>
 
@@ -72,7 +91,7 @@
         <div class="products-type">
           <img src="http://placehold.it/150x100">
           <p class="products-type-price">
-            <b>310&#8381;</b>/кг
+            <span class="products-type-price-strong">310&#8381;</span>/кг
           </p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
@@ -80,7 +99,7 @@
         <div class="products-type">
           <img src="http://placehold.it/150x100">
           <p class="products-type-price">
-            <b>380&#8381;</b>/кг
+            <span class="products-type-price-strong">380&#8381;</span>/кг
           </p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </div>
@@ -88,7 +107,7 @@
         <div class="products-type">
           <img src="http://placehold.it/150x100">
           <p class="products-type-price">
-            <b>355&#8381;</b>/кг
+            <span class="products-type-price-strong">355&#8381;</span>/кг
           </p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
@@ -96,17 +115,17 @@
         <div class="products-type">
           <img src="http://placehold.it/150x100">
           <p class="products-type-price">
-            <b>415&#8381;</b>/кг
+            <span class="products-type-price-strong">415&#8381;</span>/кг
           </p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </section>
 
       <section class="promo">
-        <h2 class="promo-title">
+        <h3 class="promo-title">
           Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного
           производства на развес
-        </h2>
+        </h3>
         <ul>
           <li>
             Все наше мороженое изготавливается на собственном
@@ -151,7 +170,7 @@
           </p>
           <form class="news-subscribe-form" action="http://localhost" method="post">
             <input type="email" name="email" placeholder="Электронная почта">
-            <input class="btn" type="submit" value="Отправить">
+            <input class="btn news-subscribe-form-btn" type="submit" value="Отправить">
           </form>
         </div>
       </section>
