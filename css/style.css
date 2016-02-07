@@ -30,23 +30,21 @@ h3 {
 .main-header {
   position: relative;
   z-index: 10;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: gray;
 }
 
 .logo {
   float: left;
-  width: 154px;
-  height: 64px;
-  margin-top: 10px;
   margin-left: 1.7%;
-  margin-bottom: 10px;
   line-height: 0px;
 }
 
 .main-navigation {
   float: left;
   width: 400px;
-  margin-top: 23px;
+  margin-top: 13px;
   margin-left: 15px;
   padding: 0px;
   background-color: bisque;
@@ -67,7 +65,7 @@ h3 {
 .user-block {
   float: right;
   width: 265px;
-  margin-top: 23px;
+  margin-top: 13px;
   margin-right: 2.3%;
   font-size: 0px;
   background-color: blueviolet;
@@ -84,10 +82,10 @@ h3 {
 }
 
 .main-header-about-store {
-  float: right;
-  width: 200px;
-  margin-top: -10px;
-  margin-right: 2.3%;
+  position: absolute;
+  top: 74px;
+  right: 2.3%;
+  margin-top: 0px;
   text-align: right;
   background-color: darkgoldenrod;
 }
@@ -209,6 +207,12 @@ h3 {
   width: 100%;
 }
 
+.contacts-pin {
+  position: absolute;
+  top: 138px;
+  left: 21.5%;
+}
+
 .contacts-block {
   position: absolute;
   width: 302px;
@@ -239,25 +243,21 @@ h3 {
 .products {
   position: relative;
   z-index: 10;
-  font-size: 0px;
+}
+
+.row {
+  padding-top: 40px;
 }
 
 .products-type {
-  display: inline-block;
-  vertical-align: top;
+  float: left;
   width: 22.2%;
   margin-right: 2.2%;
-  margin-top: 40px;
-  font-size: 14px;
   background-color: aqua;
 }
 
-.products-type:nth-child(4n+1) {
+.row .products-type:first-child {
   margin-left: 2.3%;
-}
-
-.products-type:nth-child(4n) {
-  margin-right: 0%;
 }
 
 .products-type img {
@@ -266,8 +266,11 @@ h3 {
 }
 
 .paginator {
-  float: right;
   margin-top: 100px;
+}
+
+.paginator ul {
+  float: right;
   margin-right: 2.3%;
   margin-bottom: 3.3%;
 }
@@ -281,21 +284,22 @@ h3 {
   padding-bottom: 20px;
   background: green;
 }
+
 .main-footer-social {
   float: left;
-  width: 22.2%;
-  margin-left: 2.3%;
+  width: 31%;
+  padding-left: 2.3%;
+}
+
+.main-footer-about-shop {
+  float: left;
+  width: 33.3%;
 }
 
 .main-footer-copyright
 {
   float: right;
-  width: 190px;
-  margin-right: 2.3%;
-  font-size: 14px;
-}
-
-.main-footer-about-shop {
-  width: 330px;
-  margin: 0px auto;
+  width: 31%;
+  padding-right: 2.3%;
+  text-align: right;
 }
