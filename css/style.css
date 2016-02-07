@@ -1,9 +1,12 @@
 body {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0px auto;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;
-  color: white;
+  background-color: orange;
 }
 
 h1, h2 {
@@ -16,4 +19,283 @@ h3 {
   font-family: "Roboto Medium";
   font-size: 24px;
   line-height: 30px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  position: relative;
+  z-index: 10;
+  background-color: gray;
+}
+
+.logo {
+  float: left;
+  width: 154px;
+  height: 64px;
+  margin-top: 10px;
+  margin-left: 1.7%;
+  margin-bottom: 10px;
+  line-height: 0px;
+}
+
+.main-navigation {
+  float: left;
+  width: 400px;
+  margin-top: 23px;
+  margin-left: 15px;
+  padding: 0px;
+  background-color: bisque;
+}
+.main-navigation ul {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 13px;
+  font-size: 16px;
+}
+
+.user-block {
+  float: right;
+  width: 265px;
+  margin-top: 23px;
+  margin-right: 2.3%;
+  font-size: 0px;
+  background-color: blueviolet;
+}
+
+.user-block a {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  margin-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+
+.main-header-about-store {
+  float: right;
+  width: 200px;
+  margin-top: -10px;
+  margin-right: 2.3%;
+  text-align: right;
+  background-color: darkgoldenrod;
+}
+
+.main {
+  background-color: red;
+}
+
+.breadcrumbs {
+  padding-top: 17px;
+  margin-left: 2.3%;
+  margin-bottom: 5px;
+}
+
+.breadcrumbs ul {
+  margin: 0px;
+  padding: 0px;
+  background-color: aqua;
+}
+.breadcrumbs li {
+  display: inline;
+  background-color: white;
+}
+
+.title {
+  margin: 0px 2.3% 30px 2.3%;
+  background-color: blue;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  padding-top: 307px;
+  line-height: 0px;
+  background-color: yellow;
+}
+
+.slider-item img{
+  position: absolute;
+  display: block;
+  top: -84px;
+  left: 50%;
+  margin-left: -522px;
+  background-color: gray;
+}
+
+.slider-item h1 {
+  position: relative;
+  z-index: 10;
+  display: block;
+  margin-bottom: 35px;
+  text-align: center;
+  background-color: aqua;
+}
+
+.slider-item a {
+  position: relative;
+  z-index: 10;
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: aqua;
+}
+
+.slider-radio {
+  display: none;
+}
+
+.bonus {
+  position: relative;
+  z-index: 10;
+}
+
+.bonus-left {
+  float: left;
+  width: 46.7%;
+  margin-left: 2.3%;
+  background-color: aqua;
+}
+
+.bonus-right {
+  float: right;
+  width: 46.7%;
+  margin-right: 2.3%;
+  background-color: aqua;
+}
+
+.promo {
+  margin: 40px 2.3%;
+  border-top: 1px solid transparent;
+  background-color: aqua;
+}
+
+.news {
+  margin-bottom: 40px;
+}
+
+.news-blog {
+  float: left;
+  width: 46.7%;
+  margin-left: 2.3%;
+  background-color: aqua;
+}
+
+.news-subscribe {
+  float: right;
+  width: 46.7%;
+  margin-right: 2.3%;
+  background-color: aqua;
+}
+
+.contacts {
+  position: relative;
+  line-height: 0px;
+}
+
+.contacts-map {
+  width: 100%;
+}
+
+.contacts-block {
+  position: absolute;
+  width: 302px;
+  top: 66px;
+  right: 2.3%;
+  line-height: 1.3em;
+  background-color: white;
+}
+
+.products-filter {
+  margin-left: 2.3%;
+  margin-right: 2.3%;
+  font-size: 0px;
+  background-color: orchid;
+}
+
+.products-filter fieldset {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.products-filter fieldset:last-of-type {
+  margin-bottom: 0px;
+}
+
+.products {
+  position: relative;
+  z-index: 10;
+  font-size: 0px;
+}
+
+.products-type {
+  display: inline-block;
+  vertical-align: top;
+  width: 22.2%;
+  margin-right: 2.2%;
+  margin-top: 40px;
+  font-size: 14px;
+  background-color: aqua;
+}
+
+.products-type:nth-child(4n+1) {
+  margin-left: 2.3%;
+}
+
+.products-type:nth-child(4n) {
+  margin-right: 0%;
+}
+
+.products-type img {
+  width: 100%;
+  height: 100%;
+}
+
+.paginator {
+  float: right;
+  margin-top: 100px;
+  margin-right: 2.3%;
+  margin-bottom: 3.3%;
+}
+
+.paginator li{
+  display: inline;
+}
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: green;
+}
+.main-footer-social {
+  float: left;
+  width: 22.2%;
+  margin-left: 2.3%;
+}
+
+.main-footer-copyright
+{
+  float: right;
+  width: 190px;
+  margin-right: 2.3%;
+  font-size: 14px;
+}
+
+.main-footer-about-shop {
+  width: 330px;
+  margin: 0px auto;
 }

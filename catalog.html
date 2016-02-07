@@ -8,27 +8,30 @@
 <body>
   <header class="main-header">
     <a class="logo" href="#">
+      <!--<img src="" style="background-color: blue" width="154" height="64">-->
       <img src="img/logo.svg" width="154" height="64">
     </a>
 
-    <nav class="main-navigation">
-      <ul>
-        <li>
-          <a class="main-navigation-active-item" href="#">Каталог</a>
-        </li>
-        <li>
-          <a href="#">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="#">О Компании</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="clearfix">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a class="main-navigation-active-item" href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О Компании</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="user-block">
-      <a class="user-block-btn user-block-btn-finder" href="#">Поиск</a>
-      <a class="user-block-btn user-block-btn-login" href="#">Вход</a>
-      <a class="user-block-btn user-block-btn-cart" href="#">Корзина</a>
+      <div class="user-block">
+        <a class="user-block-btn user-block-btn-cart" href="#">Корзина</a>
+        <a class="user-block-btn user-block-btn-login" href="#">Вход</a>
+        <a class="user-block-btn user-block-btn-finder" href="#">Поиск</a>
+      </div>
     </div>
 
     <p class="main-header-about-store">
@@ -37,8 +40,8 @@
     </p>
   </header>
 
-  <main>
-    <nav class="breadcrumbs">
+  <main class="main clearfix">
+    <div class="breadcrumbs">
       <ul>
         <li>
           <a href="#">Главная</a>
@@ -50,7 +53,7 @@
           <a href="#">Сливочное</a>
         </li>
       </ul>
-    </nav>
+    </div>
 
     <h1 class="title">Сливочное мороженое</h1>
 
@@ -95,7 +98,7 @@
 
     <section class="products">
       <div class="products-type">
-        <img src="img/icecream-orange.png" width="267" height="267">
+        <img src="img/icecream-orange.png" width="22.2%" height="22.2%">
         <p class="products-type-price">
           <span class="products-type-price-strong">310&#8381;</span>/кг
         </p>
@@ -189,6 +192,7 @@
         </p>
         <a href="#">Сливочное с мятным сиропом</a>
       </div>
+
     </section>
 
     <div class="paginator">
@@ -218,28 +222,28 @@
     </div>
   </main>
 
-  <footer class="main-footer">
-    <div class="footer-social">
+  <footer class="main-footer clearfix">
+    <div class="main-footer-social">
       <a class="social-btn social-btn-tw" href="#">Твиттер</a>
       <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
       <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
     </div>
 
-    <div class="footer-about-shop">
-      <a href="#">Для поставщиков</a>
-      <a href="#">Наши документы</a>
-      <a href="#">О производстве</a>
-      <a href="#">Экологические стандарты</a>
-    </div>
-
-    <div class="footer-copyright">
+    <div class="main-footer-copyright">
       <img class="footer-copyright-img" src="img/logo-academy.svg" width="108" height="37">
       <p>
         Сделано в
         <a href="#">HTML Academy</a>
         &#169; 2016
       </p>
+    </div>
+
+    <div class="main-footer-about-shop">
+      <a href="#">Для поставщиков</a>
+      <a href="#">Наши документы</a>
+      <a href="#">О производстве</a>
+      <a href="#">Экологические стандарты</a>
     </div>
   </footer>
 </body>

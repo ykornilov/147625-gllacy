@@ -11,24 +11,26 @@
         <img src="img/logo.svg" width="154" height="64">
       </a>
 
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a href="#">О Компании</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="clearfix">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a class="main-navigation-active-item" href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">О Компании</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="user-block">
-        <a class="user-block-btn user-block-btn-finder" href="#">Поиск</a>
-        <a class="user-block-btn user-block-btn-login" href="#">Вход</a>
-        <a class="user-block-btn user-block-btn-cart" href="#">Пусто</a>
+        <div class="user-block">
+          <a class="user-block-btn user-block-btn-cart" href="#">Корзина</a>
+          <a class="user-block-btn user-block-btn-login" href="#">Вход</a>
+          <a class="user-block-btn user-block-btn-finder" href="#">Поиск</a>
+        </div>
       </div>
 
       <p class="main-header-about-store">
@@ -37,7 +39,7 @@
       </p>
     </header>
 
-    <main>
+    <main class="main">
       <section class="slider">
         <input class="slider-radio" id="slide1" type="radio" name="slide">
         <input class="slider-radio" id="slide2" type="radio" name="slide">
@@ -45,19 +47,8 @@
 
         <div class="slider-item">
           <img src="img/icecream.png" width="1045" height="881">
-          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-          <a class="btn slider-item-btn" href="#">Давайте оба!</a>
-        </div>
-
-        <div class="slider-item">
-          <img src="img/icecream.png" width="1045" height="881">
-          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-          <a class="btn slider-item-btn" href="#">Давайте оба!</a>
-        </div>
-
-        <div class="slider-item">
-          <img src="img/icecream.png" width="1045" height="881">
-          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+          <!--<img src="" width="1045" height="881">-->
+          <h1>Крем-брюле и пломбир<br> с малиновым джемом</h1>
           <a class="btn slider-item-btn" href="#">Давайте оба!</a>
         </div>
 
@@ -68,7 +59,7 @@
         </div>
       </section>
 
-      <section class="bonus">
+      <section class="bonus clearfix">
         <div class="bonus-left">
           <h2 class="bonus-title">Малинка даром!</h2>
           <p>
@@ -153,7 +144,7 @@
         </ul>
       </section>
 
-      <section class="news">
+      <section class="news clearfix">
         <div class="news-blog">
           <p>Новое в нашем блоге</p>
           <a href="#">
@@ -176,7 +167,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts clearfix">
         <img class="contacts-map" src="img/map.jpg" width="1200" height="430">
         <div class="contacts-block">
           <p>
@@ -199,28 +190,28 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="footer-social">
+    <footer class="main-footer clearfix">
+      <div class="main-footer-social">
         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       </div>
 
-      <div class="footer-about-shop">
-        <a href="#">Для поставщиков</a>
-        <a href="#">Наши документы</a>
-        <a href="#">О производстве</a>
-        <a href="#">Экологические стандарты</a>
-      </div>
-
-      <div class="footer-copyright">
+      <div class="main-footer-copyright">
         <img class="footer-copyright-img" src="img/logo-academy.svg" width="108" height="37">
         <p>
           Сделано в
           <a href="#">HTML Academy</a>
           &#169; 2016
         </p>
+      </div>
+
+      <div class="main-footer-about-shop">
+        <a href="#">Для поставщиков</a>
+        <a href="#">Наши документы</a>
+        <a href="#">О производстве</a>
+        <a href="#">Экологические стандарты</a>
       </div>
     </footer>
   </body>
