@@ -3,7 +3,6 @@
     <style>
       .cls-1 {
         fill: #fff;
-        opacity: 0.8;
         fill-rule: evenodd;
       }
     </style>
