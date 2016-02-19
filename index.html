@@ -21,7 +21,24 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a class="main-navigation-active-item" href="#">Каталог</a>
+              <a href="catalog.html">Каталог</a>
+              <ul class="main-navigation-submenu">
+                <li>
+                  <a href="#">Новинки</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -33,9 +50,54 @@
         </nav>
 
         <div class="user-block">
-          <a class="user-block-btn user-block-btn-cart" href="#">Пусто</a>
-          <a class="user-block-btn user-block-btn-login" href="#">Вход</a>
-          <a class="user-block-btn user-block-btn-finder" href="#">Поиск</a>
+          <div class="user-block-cart">
+            <a class="user-block-btn user-block-cart-btn user-block-cart-full" href="#">2 Товара</a>
+            <a class="user-block-btn user-block-cart-btn user-block-cart-empty" href="#">Пусто</a>
+            <form class="user-block-form clearfix" action="http://localhost" method="post">
+              <div class="user-block-cart-items">
+
+                <div class="user-block-cart-item">
+                  <div class="user-block-cart-del-btn item-cell"></div>
+                  <div class="user-block-cart-img item-cell">
+                    <img src="img/icecream-orange.png" width="34" height="34">
+                </div>
+                  <div class="user-block-cart-name item-cell">Пломбир с апельсиновым джемом</div>
+                  <div class="user-block-cart-price item-cell">1,5 кг <span class="light">x 200 руб.</span></div>
+                  <div class="user-block-cart-cost item-cell">300 руб.</div>
+                </div>
+
+                <div class="user-block-cart-item">
+                  <div class="user-block-cart-del-btn item-cell"></div>
+                  <div class="user-block-cart-img item-cell">
+                    <img src="img/icecream-strawberry.png" width="34" height="34">
+                  </div>
+                  <div class="user-block-cart-name item-cell">Клубничный пломбир с присыпкой из белого шоколада</div>
+                  <div class="user-block-cart-price item-cell">1,5 кг <span class="light">x 300 руб.</span></div>
+                  <div class="user-block-cart-cost item-cell">450 руб.</div>
+                </div>
+
+              </div>
+
+              <div class="user-block-cart-total">Итого: 750 руб. </div>
+              <input class="btn buy-btn" type="submit" value="Оформить заказ">
+            </form>
+          </div>
+          <div class="user-block-login">
+            <a class="user-block-btn user-block-login-btn" href="#">Вход</a>
+            <form class="user-block-form clearfix" action="http://localhost" method="post">
+              <input type="email" name="login-form-email" placeholder="Электронная почта">
+              <input type="password" name="login-form-password" placeholder="Пароль">
+              <input class="btn login-btn" type="submit" value="Войти">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </div>
+          <div class="user-block-finder">
+            <a class="user-block-btn user-block-finder-btn" href="#">Поиск</a>
+            <form class="user-block-form" action="http://localhost" method="post">
+              <input type="text" name="finder-form-request" placeholder="Что ищем?">
+            </form>
+          </div>
         </div>
 
         <p class="main-header-about-store">
@@ -97,6 +159,7 @@
                 <figcaption><span class="products-type-price-strong">310&#8381;</span>/кг</figcaption>
               </figure>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a class="btn products-type-preview-btn" href="#">Быстрый просмотр</a>
             </div>
 
             <div class="products-type">
@@ -105,6 +168,7 @@
                 <figcaption><span class="products-type-price-strong">380&#8381;</span>/кг</figcaption>
               </figure>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <a class="btn products-type-preview-btn" href="#">Быстрый просмотр</a>
             </div>
 
             <div class="products-type">
@@ -113,6 +177,7 @@
                 <figcaption><span class="products-type-price-strong">355&#8381;</span>/кг</figcaption>
               </figure>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a class="btn products-type-preview-btn" href="#">Быстрый просмотр</a>
             </div>
 
             <div class="products-type">
@@ -121,6 +186,7 @@
                 <figcaption><span class="products-type-price-strong">415&#8381;</span>/кг</figcaption>
               </figure>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <a class="btn products-type-preview-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
         </section>
@@ -223,7 +289,7 @@
       </main>
 
       <footer class="main-footer clearfix">
-        <div class="main-footer-social">
+        <div class="main-footer-social clearfix">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -241,13 +307,27 @@
           <img class="footer-copyright-img" src="img/logo-academy.svg" width="108" height="37">
           <p>
             Сделано в
-            <a href="#">HTML Academy</a>
+            <a href="http://www.htmlacademy.ru">HTML Academy</a>
             &#169; 2016
           </p>
         </div>
       </footer>
     </div>
   </div>
+
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2>Мы обязательно Вам ответим!</h2>
+    <form class="modal-content-form" action="http://localhost" method="post">
+      <input type="text" name="name" placeholder="Как вас зовут?">
+      <input type="email" name="email" placeholder="Ваша почта для ответа?">
+      <textarea placeholder="Напишите что-нибудь"></textarea>
+      <input class="btn modal-content-form-btn" type="submit" value="Отправить">
+    </form>
+  </div>
+
+  <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FhfhXH3-s9vVpnjByUUMCvgYoqa3c-JH&width=100%&height=429&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
   </body>
 </html>
