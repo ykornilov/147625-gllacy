@@ -44,6 +44,7 @@ body > input[type="radio"] {
 }
 
 .content-wrapper {
+  position: relative;
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
@@ -360,6 +361,7 @@ body > input[type="radio"] {
 }
 
 .user-block-form a {
+  display: block;
   font-size: 13px;
   font-weight: 400;
   color: #343434;
@@ -897,6 +899,7 @@ body > input[type="radio"] {
 
 .contacts {
   position: relative;
+  min-height: 429px;
   line-height: 0px;
 }
 
