@@ -1606,13 +1606,15 @@ input[type="radio"]:disabled + .radio::after{
   resize: none;
 }
 
-.modal-content-form input:hover,
+.modal-content-form input[type="text"]:hover,
+.modal-content-form input[type="email"]:hover,
 .modal-content-form textarea:hover {
   padding: 8px 19px;
   border-width: 2px;
 }
 
-.modal-content-form input:focus,
+.modal-content-form input[type="text"]:focus,
+.modal-content-form input[type="email"]:focus,
 .modal-content-form textarea:focus {
   padding: 8px 19px;
   border-width: 2px;
