@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <input id="btn-1" type="radio" name="toggle" checked>
@@ -20,7 +20,7 @@
 
           <nav class="main-navigation">
             <ul>
-              <li>
+              <li class="main-navigation-item">
                 <a href="catalog.html">Каталог</a>
                 <ul class="main-navigation-submenu">
                   <li>
@@ -40,10 +40,10 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="main-navigation-item">
                 <a href="#">Доставка и оплата</a>
               </li>
-              <li>
+              <li class="main-navigation-item">
                 <a href="#">О Компании</a>
               </li>
             </ul>
@@ -51,9 +51,8 @@
 
           <div class="user-block">
             <div class="user-block-cart">
-              <a class="user-block-btn user-block-cart-btn user-block-cart-full" href="#">2 Товара</a>
-              <a class="user-block-btn user-block-cart-btn user-block-cart-empty" href="#">Пусто</a>
-              <form class="user-block-form clearfix" action=" " method="post">
+              <a class="user-block-btn user-block-cart-btn" href="#">Пусто</a>
+              <form class="user-block-form clearfix" action="http://localhost" method="post">
                 <div class="user-block-cart-items">
 
                   <div class="user-block-cart-item">
@@ -84,7 +83,7 @@
             </div>
             <div class="user-block-login">
               <a class="user-block-btn user-block-login-btn" href="#">Вход</a>
-              <form class="user-block-form clearfix" action=" " method="post">
+              <form class="user-block-form clearfix" action="http://localhost" method="post">
                 <input type="email" name="login-form-email" placeholder="Электронная почта">
                 <input type="password" name="login-form-password" placeholder="Пароль">
                 <input class="btn login-btn" type="submit" value="Войти">
@@ -94,7 +93,7 @@
             </div>
             <div class="user-block-finder">
               <a class="user-block-btn user-block-finder-btn" href="#">Поиск</a>
-              <form class="user-block-form" action=" " method="post">
+              <form class="user-block-form" action="http://localhost" method="post">
                 <input type="text" name="finder-form-request" placeholder="Что ищем?">
               </form>
             </div>
@@ -255,7 +254,7 @@
                   всего самого вкусного, что у нас происходит. Обещаем не спамить
                   и не слать всякой не нужной ерунды. Честно =)
                 </p>
-                <form class="news-subscribe-form" action=" " method="post">
+                <form class="news-subscribe-form" action="http://localhost" method="post">
                   <div class="news-subscribe-form-email">
                     <input type="email" name="email" placeholder="Электронная почта">
                   </div>
@@ -286,7 +285,7 @@
               </span><br>
               (c 10 до 20 ежедневно)
             </p>
-            <a class="btn contacts-feedback-btn" href="#">Форма обратной связи</a>
+            <a class="btn contacts-feedback-btn" href="form.html">Форма обратной связи</a>
           </div>
         </section>
       </main>
@@ -323,7 +322,7 @@
     <div class="modal-content">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <h2>Мы обязательно Вам ответим!</h2>
-      <form class="modal-content-form" action=" " method="post">
+      <form class="modal-content-form" action="http://localhost" method="post">
         <input type="text" name="name" placeholder="Как вас зовут?">
         <input type="email" name="email" placeholder="Ваша почта для ответа?">
         <textarea placeholder="Напишите что-нибудь"></textarea>
@@ -331,7 +330,7 @@
       </form>
     </div>
 
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FhfhXH3-s9vVpnjByUUMCvgYoqa3c-JH&width=100%&height=429&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FhfhXH3-s9vVpnjByUUMCvgYoqa3c-JH&width=100%25&height=429&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
   </body>
 </html>
