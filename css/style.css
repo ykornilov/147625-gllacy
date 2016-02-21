@@ -327,12 +327,14 @@ body > input[type="radio"] {
 .user-block-form input[type="text"]:hover,
 .user-block-form input[type="email"]:hover,
 .user-block-form input[type="password"]:hover {
+  padding: 5px 10px;
   border: 2px solid #d3d3d2;
 }
 
 .user-block-form input[type="text"]:focus,
 .user-block-form input[type="email"]:focus,
 .user-block-form input[type="password"]:focus {
+  padding: 5px 10px;
   border: 2px solid #8fbdec;
 }
 
@@ -876,10 +878,12 @@ body > input[type="radio"] {
 }
 
 .news-subscribe-form-email input[type="email"]:hover {
+  padding: 9px;
   border: 2px solid #d3d3d2;
 }
 
 .news-subscribe-form-email input[type="email"]:focus {
+  padding: 9px;
   border: 2px solid #8fbdec;
 }
 
@@ -1221,6 +1225,7 @@ input[type="radio"]:disabled + .radio::after{
   position: relative;
   margin: 0;
   padding: 0;
+  color: #ffffff;
 }
 
 .products-type figcaption {
@@ -1602,14 +1607,15 @@ input[type="radio"]:disabled + .radio::after{
 
 .modal-content-form input:hover,
 .modal-content-form textarea:hover {
+  padding: 8px 19px;
   border-width: 2px;
 }
 
 .modal-content-form input:focus,
 .modal-content-form textarea:focus {
+  padding: 8px 19px;
   border-width: 2px;
   border-color: #8fdbec;
-  border-radius: 5px;
 }
 
 .modal-content-form .modal-content-form-btn{
