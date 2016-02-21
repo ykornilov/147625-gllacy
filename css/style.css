@@ -1603,6 +1603,7 @@ input[type="radio"]:disabled + .radio::after{
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   outline: none;
+  resize: none;
 }
 
 .modal-content-form input:hover,
